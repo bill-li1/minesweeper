@@ -1,0 +1,47 @@
+/* Add to your CSS file or inside a <style> tag in your component */
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    width: 90%; /* This makes the width of the container 90% of its parent */
+    max-width: 800px; /* This limits the maximum width to 800px */
+    margin: 0 auto; /* This centers the container in the middle of its parent */
+}
+
+.game-controls {
+    margin-right: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #888;
+    border: 2px solid #666;
+    color: #fff;
+    font-size: 14px;
+}
+
+.cell.revealed {
+    background-color: #ddd;
+    color: #000;
+}
+
+.cell.marked {
+    background-color: #d22;
+}
+
+button {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
